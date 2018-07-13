@@ -8,6 +8,7 @@
 
 
 ## Recent Projects
+
 ### Twitter-States
 Tweet frequency data visualization built using D3.js, Node.js, the Twitter API, websockets, and vanilla dom manipulation
 ### GoRead

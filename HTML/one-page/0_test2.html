@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="0_test.css" type="text/css" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <button><i id="icon" class="devicon-javascript-plain "></i></button>
+        </div>
+
+        <div class="back">
+          <button><i id="icon" class="devicon-javascript-plain colored"></i></button>
+        </div>
+      </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <button><i id="icon" class="devicon-react-original-wordmark "></i></button>
+        </div>
+
+        <div class="back">
+          <button><i id="icon" class="devicon-react-original colored"></i></button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+
+
+  <script>
+    const butter = document.getElementsByTagName('i')[0];
+    console.log("hi");
+    butter.addEventListener('mouseenter', (e) => showColored(e));
+    butter.addEventListener('mouseleave', (e) => removeColored(e));
+    showColored = function (e) {
+      console.log(e.target);
+      e.target.classList.add('colored');
+    }
+    removeColored = function (e) {
+      console.log(e.target);
+      e.target.classList.remove('colored');
+    }
+  </script>
+
+</html>
