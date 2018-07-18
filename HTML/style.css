@@ -1035,8 +1035,7 @@ body.stretched #header.full-header .container {
 #logo {
 	position: relative;
 	float: left;
-	font-family: 'Raleway', sans-serif;
-	font-size: 36px;
+	font-size: 24px;
 	line-height: 100%;
 	margin-right: 40px;
 }
@@ -2030,9 +2029,9 @@ body:not(.device-md):not(.device-sm):not(.device-xs) #header.transparent-header:
 
 #header.sticky-style-3 { height: 181px; }
 
-#header.sticky-style-2 #header-wrap { height: 60px; }
+#header.sticky-style-2 #header-wrap { height: 50px; }
 
-#header.sticky-style-3 #header-wrap { height: 80px; }
+#header.sticky-style-3 #header-wrap { height: 50px; }
 
 #primary-menu > ul > li > ul,
 #primary-menu > ul > li > .mega-menu-content,
@@ -2089,7 +2088,7 @@ body.top-search-open #top-account { opacity: 0; }
 
 #header.sticky-header:not(.static-sticky),
 #header.sticky-header:not(.static-sticky) #header-wrap,
-#header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img { height: 60px; }
+#header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img { height: 50px; }
 
 #header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
 	padding-top: 19px;
@@ -13384,27 +13383,57 @@ body:not(.no-transition) #wrapper,
 	justify-content: center;
 }
 
-/* .tech-icon-front {
-	border: none;
-	background: #ffffff;
-	color: #f2f2f2;
-	padding: 10px;
-	font-size: 80px;
-	border-radius: 5px;
-	box-sizing: border-box;
-	transition: all 500ms ease;
+.tech-icon-tableau > div {
+	padding: 15px;
 }
 
-.tech-icon-back {
-	border: none;
-	background: #ffffff;
-	color: #000000;
-	padding: 10px;
-	font-size: 80px;
+.flipper {
+	line-height: 1.5;
+}
+
+.social-and-resume {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.resume {
+	font-size: 14px;
+	border-radius: 15px;
+	color: #555;
+	border: 2px solid #555;
+	padding: 5px 10px;
+}
+
+.resume:hover {
+	background-color: #fff;
+	transform: scale(1.05);
+	color: #555;
+}
+
+.title-tile {
+	display: inline-flex;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 20px;
 	border-radius: 5px;
-	box-sizing: border-box;
-	transition: all 500ms ease;
-} */
+}
+
+.name-card {
+  font-size: 120px;
+	font-family: 'Nanum Myeongjo', serif;
+	font-weight: 600px;
+}
+
+.title-card {
+	font-size: 36px;
+	font-family: 'Nanum Myeongjo', serif;
+	align-self: center;
+}
+
+.social-icons {
+	height: 30px;
+}
 
 .flip-container {
 	perspective: 1000px;
@@ -13418,6 +13447,7 @@ body:not(.no-transition) #wrapper,
 .flip-container, .front, .back {
 	width: 80px;
 	height: 80px;
+	margin-top: 15px;
 }
 
 .flipper {
@@ -13429,7 +13459,6 @@ body:not(.no-transition) #wrapper,
 .front, .back {
 	backface-visibility: hidden;
 	position: absolute;
-	top: 0;
 	left: 0;
 }
 
