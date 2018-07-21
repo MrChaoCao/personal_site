@@ -64,10 +64,10 @@
 
 						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
-							<li><a href="#" data-href="#section-about" data-offset="60"><div>About</div></a></li>
-							<li><a href="#" data-href="#section-projects"><div>Projects</div></a></li>
-							<li><a href="#" data-href="#section-works"><div>Technologies</div></a></li>
-							<li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
+							<li><a href="#" data-href="#about" data-offset="60"><div>About</div></a></li>
+							<li><a href="#" data-href="#projects"><div>Projects</div></a></li>
+							<li><a href="#" data-href="#my-stack"><div>My Stack</div></a></li>
+							<li><a href="#" data-href="#contact"><div>Contact</div></a></li>
 						</ul>
 
 						<a href="#" id="overlay-menu-close" class="d-none d-lg-block"><i class="icon-line-cross"></i></a>
@@ -88,38 +88,38 @@
 				<div class="container clearfix">
 
 					<div class="container">
-						<div class="jumbotron text-center" style="background-color: rgba(255,255,255,0.5)">
-							<h1>Chao Cao</h1>
-							<span class="title-card">Full-stack Software Engineer
+						<div class="splash-info">
+							<div style="margin-top: 15%; margin-left: 60%; background-color: rgba(255,255,255,0.5); display: flex; flex-direction: column; justify-content: center;">
+								<h1 style="font-size: 88px;">Chao Cao</h1>
+								<span class="title-card" style="display:flex; align-items: center; flex-direction:column; font-size:18px;" >Full-stack Software Engineer
 
-								<div class="social-and-resume">
-									<div class="social-icons">
-										<a href="https://www.linkedin.com/in/chao-cao/" class="social-icon inline-block si-small si-rounded si-colored si-linkedin" title="linkedin">
-											<i class="icon-linkedin"></i>
-											<i class="icon-linkedin"></i>
-										</a>
-										<a href="https://github.com/MrChaoCao" class="social-icon inline-block si-small si-rounded si-colored si-github" title="Github">
-											<i class="icon-github"></i>
-											<i class="icon-github"></i>
-										</a>
-										<a href="mailto:mailbox.chao.cao@gmail.com" class="social-icon inline-block si-small si-rounded si-colored si-email3" title="Email">
-											<i class="icon-email3"></i>
-											<i class="icon-email3"></i>
-										</a>
+									<div class="social-and-resume" style="flex-direction: column; display:flex; align-items: center;">
+										<div class="social-icons">
+											<a href="https://www.linkedin.com/in/chao-cao/" class="social-icon inline-block si-small si-rounded si-colored si-linkedin" title="linkedin">
+												<i class="icon-linkedin"></i>
+												<i class="icon-linkedin"></i>
+											</a>
+											<a href="https://github.com/MrChaoCao" class="social-icon inline-block si-small si-rounded si-colored si-github" title="Github">
+												<i class="icon-github"></i>
+												<i class="icon-github"></i>
+											</a>
+											<a href="mailto:mailbox.chao.cao@gmail.com" class="social-icon inline-block si-small si-rounded si-colored si-email3" title="Email">
+												<i class="icon-email3"></i>
+												<i class="icon-email3"></i>
+											</a>
+										</div>
+
+										<a class="button" href="images/chao_cao_resume.pdf" style="border-radius:5px;" download>Download Resume</a>
 									</div>
-									<a class="resume" href="images/chao_cao_resume.pdf" download>Download Resume</a>
-
-								</div>
-
-							</span>
-
-						</div>
+								</span>
+							</div>
+						</div>  <!-- End Splash Info-->
 					</div>
 
 				</div>
 			</div>
 
-			<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+			<a href="#" data-scrollto="#about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
 
 		</section><!-- #slider end -->
 
@@ -179,8 +179,7 @@
 
 					<div class="line"></div>
 
-					<div id="section-blog" class="page-section">
-						<div id="tech-section" class="container topmargin-lg clearfix">
+					<div id="my-stack" class="page-section">
 
 							<h2> My Tech Stack </h2>
 							<p class="lead divcenter bottommargin" style="max-width: 1000px;">
@@ -210,30 +209,46 @@
 									<img class="image_fade" src="images/icons/ruby-plain-wordmark.svg">
 									<img class="image_fade" src="images/icons/sass-original.svg">
 							</div><!-- .portfolio-single-image end -->
-						</div> <!--- tech section end -->
 					</div> <!--- section-blog end -->
 
 					<div class="line"></div>
 
-					<div id="personal" class="page-section">
-						<div id="personal-section" class="container topmargin-lg clearfix">
+					<div class="section nobg topmargin-lg nobottommargin">
+						<div class="container clearfix">
 
-							<h2> My NonTech Stack </h2>
-							<p class="lead divcenter bottommargin" style="max-width: 1000px;">
-								I love learning new technologies and adding them to my stack,
-								there's nothing quite like finding the perfect tool to do a job.
-								Here's a few of the tools I've used on my projects so far:
-							</p>
+							<div class="col_half nobottommargin center">
 
-						</div> <!--- tech section end -->
-					</div> <!--- section-blog end -->
+								<img src="images/unicorn.jpg" alt="unicorncake" data-animate="fadeInLeft">
+
+							</div>
+
+							<div class="col_half nobottommargin col_last">
+
+								<div class="heading-block" style="padding-top: 40px;">
+
+									<h2>Personal</h2>
+									<span>When I'm not coding I love to bake and decorate cakes</span>
+
+								</div>
+
+								<p style="font-size: 17px; font-family: roboto; color: #777;">
+									My sister helped me decorate these 2 cakes for a friend's unicorn party.
+									It's probably the prettiest thing I've baked. She's a whiz with a piping tip.
+								</p>
+
+							</div>
+
+						</div>
+					</div>
 
 				</div> <!-- End Main Section -->
 
 				<div id="contact">
 					<div class="container topmargin-lg clearfix">
 						<h2> Contact </h2>
-						<p> Thanks for visiting my site, I hope you found everything to your liking. If you'd like to contact me you can do so at mailbox.chao.cao@gmail.com </p>
+						<p style="font-size: 18px;"> Thanks for visiting my site, I hope you found everything to your liking.
+							If you're looking to hire a dev, or just want a baking buddy, please don't hesitate to contact me at
+							<a href="mailto:mailbox.chao.cao@gmail.com">mailbox.chao.cao@gmail.com</a> </p>
 					</div>
 				</div> <!-- End Contact -->
 
@@ -247,25 +262,24 @@
 
 					<div class="row divcenter clearfix">
 
-						<div class="col-lg-4">
+						<div class="col-lg-7">
 
 							<div class="widget clearfix">
 								<h4>Site Links</h4>
 
 								<ul class="list-unstyled footer-site-links nobottommargin">
 									<li><a href="#" data-scrollto="#wrapper" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Top</a></li>
-									<li><a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
-									<li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li>
-									<li><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Services</a></li>
-									<li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Blog</a></li>
-									<li><a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
+									<li><a href="#" data-scrollto="#about" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
+									<li><a href="#" data-scrollto="#projects" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Projects</a></li>
+									<li><a href="#" data-scrollto="#my-stack" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">My Stack</a></li>
+									<li><a href="#" data-scrollto="#contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
 								</ul>
 							</div>
 
 						</div>
 
 
-						<div class="col-lg-4">
+						<div class="col-lg-3">
 
 							<div class="widget clearfix">
 								<h4>Contact</h4>
@@ -295,7 +309,7 @@
 
 			<div id="copyrights">
 				<div class="container center clearfix">
-					It's pronounced Chao, like Ciao!
+					It's pronounced Chao, like: "Ciao!"
 				</div>
 			</div>
 
